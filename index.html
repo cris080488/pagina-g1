@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> G1 </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cristiano da Silva">
+        <meta name="description" content="">
+        <meta name="keywords" content="g1 noticias hoje">
+
+        <style>
+
+            @font-face {
+            font-family: 'Segoe UI';
+            src: url(Segoe\ UI.ttf);
+            }
+
+            .wrapper {
+                display: flex; 
+                flex-flow: row wrap;
+            }
+
+            .wrapper > * {
+                padding: 10px;
+                flex: 1 100%;
+            }
+
+            .header {
+                background: #C4170C;
+                display: flex; 
+                flex-wrap: wrap; 
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Segoe UI;
+                font-size: 12px;
+                color: #FFFFFF;
+            }
+
+            .header div {
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-left: 15px;
+            }
+
+            .footer {
+                background: #C4170C;
+                color: #FFFFFF;
+            }
+
+            .logo-footer{
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-left: 15px;
+            }
+
+            .main {
+                text-align: left;
+                background: #FFFFFF;
+            }
+
+            @media all and (min-width: 800px) {
+                .main    { flex: 3 0px; }
+                .main    { order: 1; }
+                .footer  { order: 2; }
+            }
+
+            body {
+                padding: 2em; 
+            }
+
+            .search-box {
+                background: #8B0000 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                border-radius: 3px;
+                opacity: 1;
+                color: #FFFFFF;
+            }
+
+            .logo{
+                width: 50px;
+                height: 40px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header div">
+                    <picture>
+                        <source media="(min-width:40px)" srcset="images/134216-512@2x.png">
+                        <source media="(min-width:40px)" srcset="images/134216-512@2x.png">
+                        <img src="images/134216-512@2x.png" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                    <h4>MENU</h4>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width:40px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:40px)" srcset="images/Caminho 1.svg">
+                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                </div>
+                <div>
+                    <i class="input-icon"></i>
+                    <input type="search" class="search-box" value="BUSCAR">
+                </div>
+            </header>
+            <content class="main">
+              <div>
+                  <h3>AS MELHORES NOTICIAS DE HOJE</h3>
+                  <div>
+
+                  </div>
+                  <article></article>
+                  <article></article>
+                  <article></article>
+                  <button>VEJA MAIS</button>
+              </div>  
+            </content>
+            <footer class="footer">
+                <div class="logo-footer">
+                    <picture>
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                    <h3>últimas notícias</h3>
+                </div>
+                <div>
+                    <p> © Copyright 2000-2020 Globo Comunicação e Participações S.A.</p>
+                    <p>princípios editoriais | política de privacidade | minha conta | anuncie </p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
+
+
