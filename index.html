@@ -44,22 +44,44 @@
                 padding-left: 15px;
             }
 
-            .footer {
-                background: #C4170C;
+            .search-box {
+                background: #8B0000 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                border-radius: 3px;
+                opacity: 1;
                 color: #FFFFFF;
             }
 
-            .logo-footer{
-                display: inline-flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                gap: 10px;
-                padding-left: 15px;
+            .main {
+                text-align: center;
+                background: #FFFFFF;
+                padding: 30px;
             }
 
-            .main {
+            .main h3 {
+                font: normal normal 600 35px/47px Segoe UI;
+            }
+
+            .main article div picture img{
+                width: 500px;
+                height: 200px;
+            }
+
+            .main article {
                 text-align: left;
-                background: #FFFFFF;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .main button {
+                background-color: #C4170C;
+                align-self: center;
+                width: 210px;
+                height: 50px;
+                font: Segoe UI bold;
+                color: #FFFFFF;
+                border: 1px solid #707070;
+                border-radius: 4px;
             }
 
             @media all and (min-width: 800px) {
@@ -72,17 +94,31 @@
                 padding: 2em; 
             }
 
-            .search-box {
-                background: #8B0000 0% 0% no-repeat padding-box;
-                border: 1px solid #707070;
-                border-radius: 3px;
-                opacity: 1;
-                color: #FFFFFF;
-            }
-
             .logo{
                 width: 50px;
                 height: 40px;
+            }
+
+            .art{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #707070;               
+
+            }
+
+            .footer {
+                background: #8B0000;
+                font: Segoe UI;
+                color: #FFFFFF;
+            }
+
+            .logo-footer{
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-left: 15px;
             }
 
         </style>
@@ -93,16 +129,16 @@
             <header class="header">
                 <div class="header div">
                     <picture>
-                        <source media="(min-width:40px)" srcset="images/134216-512@2x.png">
-                        <source media="(min-width:40px)" srcset="images/134216-512@2x.png">
+                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
+                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
                         <img src="images/134216-512@2x.png" class="logo" alt="Flowers" style="width:auto;">
                     </picture>
                     <h4>MENU</h4>
                 </div>
                 <div>
                     <picture>
-                        <source media="(min-width:40px)" srcset="images/Caminho 1.svg">
-                        <source media="(min-width:40px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
                         <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
                     </picture>
                 </div>
@@ -111,16 +147,34 @@
                     <input type="search" class="search-box" value="BUSCAR">
                 </div>
             </header>
+            
             <content class="main">
               <div>
                   <h3>AS MELHORES NOTICIAS DE HOJE</h3>
-                  <div>
+              </div>
 
-                  </div>
-                  <article></article>
-                  <article></article>
-                  <article></article>
+              <div>
+                  <article class="art">
+                      <div>
+                        <picture >
+                            <source media="(min-width:50px)" srcset="images/notas.png w794" sizes="33vw" >
+                            <source media="(min-width:50px)" srcset="images/notas@2x.png w1588" sizes="50vw">
+                            <img src="images/notas.png" alt="Flowers">
+                        </picture>
+                      </div>
+
+                      <div>
+                        <h6>ECONOMIA</h6>
+                        <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
+                        <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
+                        <p>Há 5 minutos - Em Economia</p>
+                      </div>
+
+                  </article>
+
+                  
                   <button>VEJA MAIS</button>
+
               </div>  
             </content>
             <footer class="footer">
