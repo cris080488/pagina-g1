@@ -7,193 +7,81 @@
         <meta name="description" content="">
         <meta name="keywords" content="g1 noticias hoje">
 
-        <style>
-
-            @font-face {
-            font-family: 'Segoe UI';
-            src: url(Segoe\ UI.ttf);
-            }
-
-            .wrapper {
-                display: flex; 
-                flex-flow: row wrap;
-            }
-
-            .wrapper > * {
-                padding: 10px;
-                flex: 1 100%;
-            }
-
-            .header {
-                background: #C4170C;
-                display: flex; 
-                flex-wrap: wrap; 
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-items: center;
-                font-family: Segoe UI;
-                font-size: 12px;
-                color: #FFFFFF;
-            }
-
-            .header div {
-                display: inline-flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                gap: 10px;
-                padding-left: 15px;
-            }
-
-            .search-box {
-                background: #8B0000 0% 0% no-repeat padding-box;
-                border: 1px solid #707070;
-                border-radius: 3px;
-                opacity: 1;
-                color: #FFFFFF;
-            }
-
-            .main {
-                text-align: center;
-                background: #FFFFFF;
-                padding: 30px;
-            }
-
-            .main h3 {
-                font: normal normal 600 35px/47px Segoe UI;
-            }
-
-            .main article div picture img{
-                width: 500px;
-                height: 200px;
-            }
-
-            .main article {
-                text-align: left;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .main button {
-                background-color: #C4170C;
-                align-self: center;
-                width: 210px;
-                height: 50px;
-                font: Segoe UI bold;
-                color: #FFFFFF;
-                border: 1px solid #707070;
-                border-radius: 4px;
-            }
-
-            @media all and (min-width: 800px) {
-                .main    { flex: 3 0px; }
-                .main    { order: 1; }
-                .footer  { order: 2; }
-            }
-
-            body {
-                padding: 2em; 
-            }
-
-            .logo{
-                width: 50px;
-                height: 40px;
-            }
-
-            .art{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid #707070;               
-
-            }
-
-            .footer {
-                background: #8B0000;
-                font: Segoe UI;
-                color: #FFFFFF;
-            }
-
-            .logo-footer{
-                display: inline-flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                gap: 10px;
-                padding-left: 15px;
-            }
-
-        </style>
-
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header div">
-                    <picture>
-                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
-                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
-                        <img src="images/134216-512@2x.png" class="logo" alt="Flowers" style="width:auto;">
-                    </picture>
-                    <h4>MENU</h4>
+        <header class="header">
+            <div class="menu">
+                <img class="icon" src="images/134216-512@2x.png">
+                <h4>MENU</h4>
+            </div>
+            <img class="logo" src="images/Caminho 1.svg">
+            <input type="text" value="BUSCAR">
+        </header>
+
+        <section class="content">
+            <H4> AS MELHORES NOTÍCIAS DE HOJE </H4>
+            <div class="grid-container">
+                <div class="item1">
+                    <h3>
+                        Lucro do FGTS será depositado nas constas hoje; veja como fica o rendimento
+                    </h3>
+                    <p>
+                        - caixa libera novos saques emergenciais do FGTS; veja calendário
+                    </p>
                 </div>
-                <div>
-                    <picture>
-                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
-                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
-                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
-                    </picture>
+                <div class="item2">
+                    <img src="images/caminhao.png">
+                    <p>VÍDEO: ladrão invade caminhão pela janela para roubar carga BR-040</p>
                 </div>
-                <div>
-                    <i class="input-icon"></i>
-                    <input type="search" class="search-box" value="BUSCAR">
+                <div class="item3">
+                    <img src="images/ladygaga.png">
+                    <p>FOTOS: 'festival' de máscaras de Lady Gaga rouba a cena no VMA</p>
                 </div>
-            </header>
+            </div>
+            <article>
+                <img src="images/notas@2x.png">
+                <div class="text">
+                    <h6>ECONOMIA</h6>
+                    <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
+                    <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
+                    <p>Há 5 minutos - Em Economia</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/notas@2x.png">
+                <div class="text">
+                    <h6>ECONOMIA</h6>
+                    <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
+                    <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
+                    <p>Há 5 minutos - Em Economia</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/notas@2x.png">
+                <div class="text">
+                    <h6>ECONOMIA</h6>
+                    <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
+                    <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
+                    <p>Há 5 minutos - Em Economia</p>
+                </div>
+            </article>
             
-            <content class="main">
-              <div>
-                  <h3>AS MELHORES NOTICIAS DE HOJE</h3>
-              </div>
+            <button> VEJA MAIS </button>
 
-              <div>
-                  <article class="art">
-                      <div>
-                        <picture >
-                            <source media="(min-width:50px)" srcset="images/notas.png w794" sizes="33vw" >
-                            <source media="(min-width:50px)" srcset="images/notas@2x.png w1588" sizes="50vw">
-                            <img src="images/notas.png" alt="Flowers">
-                        </picture>
-                      </div>
+        </section>
 
-                      <div>
-                        <h6>ECONOMIA</h6>
-                        <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
-                        <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
-                        <p>Há 5 minutos - Em Economia</p>
-                      </div>
+        <footer class="footer">
+            <div class="logofoot">
+                <img class="logo" src="images/Caminho 1.svg">
+                <h3> últimas notícias </h3>
+            </div>
+            <section class="textfoot">
+                <p>© Copyright 2000-2020 Globo Comunicação e Participações S.A.</p>
+                <p> princípios editoriais | política de privacidade | minha conta | anuncie</p>
+            </section>
+        </footer>
 
-                  </article>
-
-                  
-                  <button>VEJA MAIS</button>
-
-              </div>  
-            </content>
-            <footer class="footer">
-                <div class="logo-footer">
-                    <picture>
-                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
-                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
-                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
-                    </picture>
-                    <h3>últimas notícias</h3>
-                </div>
-                <div>
-                    <p> © Copyright 2000-2020 Globo Comunicação e Participações S.A.</p>
-                    <p>princípios editoriais | política de privacidade | minha conta | anuncie </p>
-                </div>
-            </footer>
-
-        </div>
     </body>
-</html>
-
-

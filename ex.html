@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> G1 </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cristiano da Silva">
+        <meta name="description" content="">
+        <meta name="keywords" content="g1 noticias hoje">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+
+            @font-face {
+            font-family: 'Segoe UI';
+            src: url(Segoe\ UI.ttf);
+            }
+
+            .wrapper {
+                display: flex; 
+                flex-flow: row wrap;
+            }
+
+            .wrapper > * {
+                padding: 10px;
+                flex: 1 100%;
+            }
+
+            .header {
+                background: #C4170C;
+                display: flex; 
+                flex-wrap: wrap; 
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Segoe UI;
+                font-size: 12px;
+                color: #FFFFFF;
+            }
+
+            .header div {
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-left: 15px;
+            }
+
+            .search-box {
+                background: #8B0000 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                border-radius: 3px;
+                opacity: 1;
+                color: #FFFFFF;
+            }
+
+            .main {
+                text-align: center;
+                background: #FFFFFF;
+                padding: 30px;
+            }
+
+            .main h3 {
+                font: normal normal 600 35px/47px Segoe UI;
+            }
+
+            .main article {
+                display: flex;
+                text-align: left;
+                align-items: left;
+                justify-content:left;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                justify-content: space-between;
+                gap: 20px;
+                border-bottom: 1px solid #707070;
+            }
+
+            .main article h5 {
+                color:#C4170C;
+                font-size: 22px;
+            }
+
+            .main button {
+                background-color: #C4170C;
+                align-self: center;
+                width: 210px;
+                height: 50px;
+                font: Segoe UI bold;
+                color: #FFFFFF;
+                border: 1px solid #707070;
+                border-radius: 4px;
+            }
+
+            body {
+                padding: 2em; 
+            }
+
+            .logo{
+                width: 50px;
+                height: 40px;
+            }
+
+            .footer {
+                background: #8B0000;
+                font: Segoe UI;
+                color: #FFFFFF;
+            }
+
+            .logo-footer{
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-left: 15px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header div">
+                    <picture>
+                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
+                        <source media="(min-width:30px)" srcset="images/134216-512@2x.png">
+                        <img src="images/134216-512@2x.png" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                    <h4>MENU</h4>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                </div>
+                <div>
+                    <i class="input-icon"></i>
+                    <input type="search" class="search-box" value="BUSCAR">
+                </div>
+            </header>
+            
+            <content class="main">
+              <div>
+                  <h3>AS MELHORES NOTICIAS DE HOJE</h3>
+              </div>
+
+              <div>
+                  <article class="art">
+                      <div>
+                            <img srcset="images/notas@2x.png w200, 
+                                         images/notas.png w300";
+                                 sizes="(max-width: 320px) 280px,
+                                        (max-width: 480px) 440px,
+                                        800px" ;
+                                 src="images/notas.png" alt="Flowers">
+                      </div>
+
+                      <div class="text">
+                        <h6>ECONOMIA</h6>
+                        <h5>Nota de R$ 200 será lançada na quarta, diz Banco Central</h5>
+                        <p>Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste ano.</p>
+                        <p>Há 5 minutos - Em Economia</p>
+                      </div>
+
+                  </article>
+
+                  
+                  <button>VEJA MAIS</button>
+
+              </div>  
+            </content>
+            <footer class="footer">
+                <div class="logo-footer">
+                    <picture>
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <source media="(min-width:30px)" srcset="images/Caminho 1.svg">
+                        <img src="images/Caminho 1.svg" class="logo" alt="Flowers" style="width:auto;">
+                    </picture>
+                    <h3>últimas notícias</h3>
+                </div>
+                <div>
+                    <p> © Copyright 2000-2020 Globo Comunicação e Participações S.A.</p>
+                    <p>princípios editoriais | política de privacidade | minha conta | anuncie </p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
+
+
